@@ -28,7 +28,7 @@ export default function Showcase() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center text-3xl font-bold text-white sm:text-4xl"
+          className="text-center text-3xl font-bold text-white sm:text-4xl reveal-up"
         >
           Alguns resultados
         </motion.h2>
@@ -41,7 +41,7 @@ export default function Showcase() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.05 * i }}
               viewport={{ once: true, amount: 0.2 }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 tilt-hover"
             >
               <div className="relative h-56 w-full overflow-hidden">
                 <img src={p.img} alt={p.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />

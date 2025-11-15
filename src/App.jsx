@@ -4,10 +4,12 @@ import Features from './components/Features'
 import Showcase from './components/Showcase'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
+import GlobalBackground from './components/GlobalBackground'
 
 function App() {
   return (
     <div className="min-h-screen bg-[#050814]">
+      <GlobalBackground />
       <Navbar />
       <Hero />
       <Features />

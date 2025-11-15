@@ -50,7 +50,7 @@ export default function Pricing() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center text-3xl font-bold text-white sm:text-4xl"
+          className="text-center text-3xl font-bold text-white sm:text-4xl reveal-up"
         >
           Planos feitos para o seu momento
         </motion.h2>
@@ -63,11 +63,11 @@ export default function Pricing() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.05 * i }}
               viewport={{ once: true, amount: 0.2 }}
-              className={`relative overflow-hidden rounded-2xl border ${t.highlight ? 'border-blue-400/40' : 'border-white/10'} bg-gradient-to-b from-white/5 to-white/[0.03] p-6`}
+              className={`relative overflow-hidden rounded-2xl border ${t.highlight ? 'border-blue-400/40' : 'border-white/10'} bg-gradient-to-b from-white/5 to-white/[0.03] p-6 tilt-hover`}
             >
               {t.highlight && (
                 <div className="absolute left-1/2 top-0 -translate-x-1/2">
-                  <div className="relative mt-3 rounded-full border border-blue-400/30 bg-blue-500/20 px-4 py-1 text-xs font-semibold text-blue-100 backdrop-blur">
+                  <div className="relative mt-3 rounded-full border border-blue-400/30 bg-blue-500/20 px-4 py-1 text-xs font-semibold text-blue-100 backdrop-blur float-smooth">
                     {t.badge}
                     <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent blur-xl" />
                   </div>
@@ -96,7 +96,7 @@ export default function Pricing() {
 
               {t.highlight && (
                 <div className="pointer-events-none absolute inset-0 -z-10">
-                  <div className="absolute -inset-20 animate-pulse-slow rounded-full bg-blue-500/10 blur-3xl" />
+                  <div className="absolute -inset-20 animate-aurora rounded-full bg-blue-500/10 blur-3xl" />
                 </div>
               )}
             </motion.div>
@@ -106,4 +106,3 @@ export default function Pricing() {
     </section>
   )
 }
-

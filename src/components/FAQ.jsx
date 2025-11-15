@@ -26,7 +26,7 @@ export default function FAQ() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center text-3xl font-bold text-white sm:text-4xl"
+          className="text-center text-3xl font-bold text-white sm:text-4xl reveal-up"
         >
           Dúvidas frequentes
         </motion.h2>
@@ -34,9 +34,9 @@ export default function FAQ() {
         <div className="mt-10 divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/[0.03]">
           {items.map((it, i) => (
             <div key={it.q} className="p-4 sm:p-6">
-              <button onClick={() => setOpen(open === i ? null : i)} className="flex w-full items-center justify-between text-left text-white">
+              <button onClick={() => setOpen(open === i ? null : i)} className="flex w-full items-center justify-between text-left text-white tilt-hover">
                 <span className="text-sm font-medium sm:text-base">{it.q}</span>
-                <span className="ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-blue-200">{open === i ? '-' : '+'}</span>
+                <span className="ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-blue-200 float-smooth">{open === i ? '-' : '+'}</span>
               </button>
               <AnimatePresence initial={false}>
                 {open === i && (

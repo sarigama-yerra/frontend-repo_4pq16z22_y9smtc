@@ -43,7 +43,7 @@ export default function Features() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center text-3xl font-bold text-white sm:text-4xl"
+          className="text-center text-3xl font-bold text-white sm:text-4xl reveal-up"
         >
           Por que escolher a BlueLanding?
         </motion.h2>
@@ -55,10 +55,10 @@ export default function Features() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.05 * i }}
               viewport={{ once: true, amount: 0.3 }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.03] p-6 text-white"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.03] p-6 text-white tilt-hover"
             >
               <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/10 blur-3xl transition-transform group-hover:scale-150" />
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-lg shadow-blue-500/20">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-lg shadow-blue-500/20 float-smooth">
                 <f.icon size={22} />
               </div>
               <h3 className="text-lg font-semibold text-white">{f.title}</h3>
